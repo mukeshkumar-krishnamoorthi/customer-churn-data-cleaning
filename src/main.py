@@ -14,4 +14,7 @@ report = profiler.column_summary()
 print(report)
 
 # Save to file
-profiler.save_as_csv(report)
+report.to_csv(
+    "outputs/reports/column_summary.csv",
+    index=False,
+)

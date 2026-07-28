@@ -8,7 +8,6 @@ class DataProfiler:
         self.df = df
 
     def profile_dataset(self):
-
         Logger.info(
             "Dataset Profile",
             Rows=self.df.shape[0],
@@ -19,25 +18,18 @@ class DataProfiler:
         )
 
     def column_summary(self) -> pd.DataFrame:
-
         summary = pd.DataFrame({
             "Column": self.df.columns,
             "Type": self.df.dtypes.astype(str).values,
             "Missing": self.df.isna().sum().values,
             "Duplicates": self.df.duplicated().sum(),
             "Unique": self.df.nunique().values,
-            "Min":self.df.min(),
-            "Max":self.df.max(),
-            "Memory":f"{self.df.memory_usage(deep=True).sum()/1024:.2f} KB",
+            "Min": self.df.min(),
+            "Max": self.df.max(),
+            "Memory": f"{self.df.memory_usage(deep=True).sum()/1024:.2f} KB",
         })
 
         return summary
-
-    def save_as_csv(self, summary: pd.DataFrame) -> None:
-        summary.to_csv(
-            "outputs/reports/column_summary.csv",
-            index=False,
-        )
 
     def profile_columns(self):
 
