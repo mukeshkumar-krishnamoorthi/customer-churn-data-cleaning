@@ -1,0 +1,38 @@
+{
+  "column_names": {
+    "strip_whitespace": true,
+    "lowercase": true,
+    "spaces_to_underscore": true,
+    "remove_special_characters": true,
+    "remove_duplicate_underscores": true,
+    "strip_underscores": true,
+    "camelcase_to_underscore": true
+  },
+
+  "strings": {
+    "strip_whitespace": true,
+    "collapse_whitespace": true,
+    "lowercase": false,
+    "empty_to_null": true
+  },
+
+  "category_mappings": {
+    "gender": {
+      "male": ["Male", "M", "MALE", "male"],
+      "female": ["Female", "F", "FeMale", "FEMALE"]
+    }
+  },
+
+  "data_types": {
+    "gender": "string",
+    "senior_citizen": "integer",
+    "tenure": "integer",
+    "monthly_charges": "float",
+    "total_charges": "float",
+    "churn": "string"
+  },
+
+  "missing_values": {
+    "replace_with_null": ["", " ", "NA", "N/A", "NULL", "null", "-"]
+  }
+}

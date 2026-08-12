@@ -1,8 +1,16 @@
 from pathlib import Path
 import json
+import numpy as np
 import pandas as pd
 
 from utils.logger import Logger
+
+
+def _json_default(value):
+    if isinstance(value, np.generic):
+        return value.item()
+
+    return str(value)
 
 
 class FileWriter:
@@ -30,7 +38,7 @@ class FileWriter:
         path.parent.mkdir(parents=True, exist_ok=True)
 
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f, indent=4, default=_json_default)
 
         Logger.info(
             "JSON Exported",
