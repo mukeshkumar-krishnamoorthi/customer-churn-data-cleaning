@@ -1,1 +1,2 @@
 check,column,severity,message,count,pct
+category,churn,warning,"Column 'churn' has 7021 value(s) outside allowed set ['yes', 'no']: ['No', 'Yes']",7021,100.0

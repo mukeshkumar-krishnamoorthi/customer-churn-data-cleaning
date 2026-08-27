@@ -159,7 +159,8 @@ class DataQuality:
             return []
 
         pct = round(duplicate_count / len(self.df) * 100, 2)
-        severity = "error" if self.rules.get("duplicates_allowed", True) is False else "warning"
+        severity = "error" if self.rules.get(
+            "duplicates_allowed", True) is False else "warning"
 
         return [QualityIssue(
             "duplicate_rows", None, severity,
@@ -171,10 +172,12 @@ class DataQuality:
 
         for column in self.rules.get("numeric_strings", []):
             if column not in self.df.columns:
-                continue
+                raise ValueError(
+                    f"Configured column '{column}' does not exist")
 
             series = self.df[column]
-            coerced = pd.to_numeric(series.astype(str).str.strip(), errors="coerce")
+            coerced = pd.to_numeric(series.astype(
+                str).str.strip(), errors="coerce")
             bad_mask = coerced.isna() & series.notna()
             bad_count = int(bad_mask.sum())
 
@@ -193,7 +196,8 @@ class DataQuality:
 
         for column, bounds in self.rules.get("ranges", {}).items():
             if column not in self.df.columns:
-                continue
+                raise ValueError(
+                    f"Configured column '{column}' does not exist")
 
             values = pd.to_numeric(self.df[column], errors="coerce")
             mask = pd.Series(False, index=values.index)
@@ -220,15 +224,18 @@ class DataQuality:
 
         for column, allowed in self.rules.get("categories", {}).items():
             if column not in self.df.columns:
-                continue
+                raise ValueError(
+                    f"Configured column '{column}' does not exist")
 
             series = self.df[column].dropna()
             mask = ~series.isin(allowed)
             count = int(mask.sum())
 
             if count:
-                pct = round(count / len(series) * 100, 2) if len(series) else 0.0
-                bad_values = sorted(series[mask].unique().tolist(), key=str)[:5]
+                pct = round(count / len(series) * 100,
+                            2) if len(series) else 0.0
+                bad_values = sorted(
+                    series[mask].unique().tolist(), key=str)[:5]
                 issues.append(QualityIssue(
                     "category", column, "warning",
                     f"Column '{column}' has {count} value(s) outside allowed set {allowed}: {bad_values}",
@@ -242,7 +249,7 @@ class DataQuality:
 
         for column in self.rules.get("unique", []):
             if column not in self.df.columns:
-                continue
+                raise ValueError(f"Configured column '{column}' does not exist")
 
             duplicate_count = int(self.df[column].duplicated().sum())
 
@@ -281,7 +288,8 @@ class DataQuality:
 
             if count:
                 valid_count = int(valid.sum())
-                pct = round(count / valid_count * 100, 2) if valid_count else 0.0
+                pct = round(count / valid_count * 100,
+                            2) if valid_count else 0.0
                 issues.append(QualityIssue(
                     "consistency", target, "warning",
                     f"'{target}' deviates from '{a}' * '{b}' by more than "

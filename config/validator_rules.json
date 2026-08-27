@@ -11,13 +11,13 @@
   "missing_warn_pct": 5,
   "duplicates_allowed": false,
   "ranges": {
-    "MonthlyCharges": { "min": 0 },
+    "monthly_charges": { "min": 0 },
     "tenure": { "min": 0, "max": 100 },
-    "SeniorCitizen": { "min": 0, "max": 1 }
+    "senior_citizen": { "min": 0, "max": 1 }
   },
   "categories": {
     "gender": ["male", "female"],
-    "Churn": ["yes", "no"],
-    "SeniorCitizen": [0, 1]
+    "churn": ["yes", "no"],
+    "senior_citizen": [0, 1]
   }
 }

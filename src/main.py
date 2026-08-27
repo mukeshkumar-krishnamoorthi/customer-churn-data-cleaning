@@ -85,4 +85,3 @@ if quality_report.score < QUALITY_GATE_MIN_SCORE:
     sys.exit(1)
 
 Logger.success(f"Quality gate passed: score {quality_report.score}")
-

@@ -53,7 +53,9 @@ class DataCleaner:
         for column, mappings in category_mappings.items():
 
             if column not in self.df.columns:
-                continue
+                raise ValueError(
+                    f"Configured column '{column}' does not exist"
+                )
 
             self.df[column] = self.df[column].replace(mappings)
 
@@ -77,7 +79,8 @@ class DataCleaner:
         for column, dtype in data_types.items():
 
             if column not in self.df.columns:
-                continue
+                raise ValueError(
+                    f"Configured column '{column}' does not exist")
 
             if dtype in ("integer", "int"):
                 self.df[column] = pd.to_numeric(
