@@ -1,0 +1,41 @@
+{
+    "score": 70,
+    "rows": 7043,
+    "columns": 20,
+    "error_count": 1,
+    "warning_count": 3,
+    "issues": [
+        {
+            "check": "schema",
+            "column": "TotalCharges",
+            "severity": "warning",
+            "message": "Column 'TotalCharges' expected kind 'numeric' but has dtype 'str'",
+            "count": 0,
+            "pct": 0.0
+        },
+        {
+            "check": "duplicate_rows",
+            "column": null,
+            "severity": "warning",
+            "message": "22 duplicate row(s) found (0.31%)",
+            "count": 22,
+            "pct": 0.31
+        },
+        {
+            "check": "numeric_string",
+            "column": "TotalCharges",
+            "severity": "error",
+            "message": "Column 'TotalCharges' should be numeric but has 11 non-numeric value(s)",
+            "count": 11,
+            "pct": 0.16
+        },
+        {
+            "check": "consistency",
+            "column": "TotalCharges",
+            "severity": "warning",
+            "message": "'TotalCharges' deviates from 'tenure' * 'MonthlyCharges' by more than 15% in 151 row(s)",
+            "count": 151,
+            "pct": 2.15
+        }
+    ]
+}

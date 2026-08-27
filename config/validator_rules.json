@@ -1,0 +1,23 @@
+{
+  "schema": {
+    "gender": "string",
+    "senior_citizen": "integer",
+    "tenure": "integer",
+    "monthly_charges": "float",
+    "total_charges": "float",
+    "churn": "string"
+  },
+  "not_null": ["gender", "tenure", "monthly_charges", "churn"],
+  "missing_warn_pct": 5,
+  "duplicates_allowed": false,
+  "ranges": {
+    "MonthlyCharges": { "min": 0 },
+    "tenure": { "min": 0, "max": 100 },
+    "SeniorCitizen": { "min": 0, "max": 1 }
+  },
+  "categories": {
+    "gender": ["male", "female"],
+    "Churn": ["yes", "no"],
+    "SeniorCitizen": [0, 1]
+  }
+}

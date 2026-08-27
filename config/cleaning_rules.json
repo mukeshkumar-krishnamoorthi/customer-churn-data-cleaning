@@ -8,21 +8,24 @@
     "strip_underscores": true,
     "camelcase_to_underscore": true
   },
-
   "strings": {
     "strip_whitespace": true,
     "collapse_whitespace": true,
     "lowercase": false,
+    "uppercase": false,
     "empty_to_null": true
+  },
+  "booleans": {
+    "lower": true,
+    "convert": false
   },
 
   "category_mappings": {
     "gender": {
       "male": ["Male", "M", "MALE", "male"],
-      "female": ["Female", "F", "FeMale", "FEMALE"]
+      "female": ["Female", "F", "FeMale", "FEMALE", "female"]
     }
   },
-
   "data_types": {
     "gender": "string",
     "senior_citizen": "integer",

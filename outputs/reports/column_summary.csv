@@ -1,0 +1,21 @@
+Column,Type,Missing,Missing %,Unique,Unique %,Min,Max,Mean,Memory (KB)
+gender,str,0,0.0,2,0.03,Male,,,89.48
+SeniorCitizen,int64,0,0.0,2,0.03,0.0,1.0,0.16,55.15
+Partner,str,0,0.0,2,0.03,No,,,72.23
+Dependents,str,0,0.0,2,0.03,No,,,70.97
+tenure,int64,0,0.0,73,1.04,0.0,72.0,32.37,55.15
+PhoneService,str,0,0.0,2,0.03,Yes,,,75.12
+MultipleLines,str,0,0.0,3,0.04,No,,,81.13
+InternetService,str,0,0.0,3,0.04,Fiber optic,,,98.48
+OnlineSecurity,str,0,0.0,3,0.04,No,,,96.21
+OnlineBackup,str,0,0.0,3,0.04,No,,,96.61
+DeviceProtection,str,0,0.0,3,0.04,No,,,96.61
+TechSupport,str,0,0.0,3,0.04,No,,,96.24
+StreamingTV,str,0,0.0,3,0.04,No,,,96.89
+StreamingMovies,str,0,0.0,3,0.04,No,,,96.91
+Contract,str,0,0.0,3,0.04,Month-to-month,,,132.88
+PaperlessBilling,str,0,0.0,2,0.03,Yes,,,72.98
+PaymentMethod,str,0,0.0,4,0.06,Electronic check,,,182.88
+MonthlyCharges,float64,0,0.0,1585,22.5,18.25,118.75,64.76,55.15
+TotalCharges,str,0,0.0,6531,92.73,20.2,,,95.58
+Churn,str,0,0.0,2,0.03,No,,,70.73

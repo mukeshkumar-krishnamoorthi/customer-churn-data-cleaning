@@ -1,0 +1,435 @@
+{
+    "dataset": {
+        "rows": 7043,
+        "columns": 20,
+        "duplicate_rows": 22,
+        "duplicate_rows_pct": 0.31,
+        "missing_cells": 0,
+        "missing_cells_pct": 0.0,
+        "memory_kb": 1784.94,
+        "dtypes": {
+            "str": 17,
+            "int64": 2,
+            "float64": 1
+        }
+    },
+    "columns": {
+        "gender": {
+            "column": "gender",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 89.48,
+            "top_value": "Male",
+            "top_freq": 3555,
+            "top_freq_pct": 50.48,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Male": 3555,
+                "Female": 3488
+            }
+        },
+        "SeniorCitizen": {
+            "column": "SeniorCitizen",
+            "dtype": "int64",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 55.15,
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.16,
+            "median": 0.0,
+            "std": 0.37,
+            "q1": 0.0,
+            "q3": 0.0,
+            "zeros": 5901,
+            "negatives": 0,
+            "outliers_iqr": 1142,
+            "outliers_iqr_pct": 16.21
+        },
+        "Partner": {
+            "column": "Partner",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 72.23,
+            "top_value": "No",
+            "top_freq": 3641,
+            "top_freq_pct": 51.7,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3641,
+                "Yes": 3402
+            }
+        },
+        "Dependents": {
+            "column": "Dependents",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 70.97,
+            "top_value": "No",
+            "top_freq": 4933,
+            "top_freq_pct": 70.04,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 4933,
+                "Yes": 2110
+            }
+        },
+        "tenure": {
+            "column": "tenure",
+            "dtype": "int64",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 73,
+            "unique_pct": 1.04,
+            "memory_kb": 55.15,
+            "min": 0.0,
+            "max": 72.0,
+            "mean": 32.37,
+            "median": 29.0,
+            "std": 24.56,
+            "q1": 9.0,
+            "q3": 55.0,
+            "zeros": 11,
+            "negatives": 0,
+            "outliers_iqr": 0,
+            "outliers_iqr_pct": 0.0
+        },
+        "PhoneService": {
+            "column": "PhoneService",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 75.12,
+            "top_value": "Yes",
+            "top_freq": 6361,
+            "top_freq_pct": 90.32,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Yes": 6361,
+                "No": 682
+            }
+        },
+        "MultipleLines": {
+            "column": "MultipleLines",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 81.13,
+            "top_value": "No",
+            "top_freq": 3390,
+            "top_freq_pct": 48.13,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3390,
+                "Yes": 2971,
+                "No phone service": 682
+            }
+        },
+        "InternetService": {
+            "column": "InternetService",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 98.48,
+            "top_value": "Fiber optic",
+            "top_freq": 3096,
+            "top_freq_pct": 43.96,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Fiber optic": 3096,
+                "DSL": 2421,
+                "No": 1526
+            }
+        },
+        "OnlineSecurity": {
+            "column": "OnlineSecurity",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.21,
+            "top_value": "No",
+            "top_freq": 3498,
+            "top_freq_pct": 49.67,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3498,
+                "Yes": 2019,
+                "No internet service": 1526
+            }
+        },
+        "OnlineBackup": {
+            "column": "OnlineBackup",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.61,
+            "top_value": "No",
+            "top_freq": 3088,
+            "top_freq_pct": 43.84,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3088,
+                "Yes": 2429,
+                "No internet service": 1526
+            }
+        },
+        "DeviceProtection": {
+            "column": "DeviceProtection",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.61,
+            "top_value": "No",
+            "top_freq": 3095,
+            "top_freq_pct": 43.94,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3095,
+                "Yes": 2422,
+                "No internet service": 1526
+            }
+        },
+        "TechSupport": {
+            "column": "TechSupport",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.24,
+            "top_value": "No",
+            "top_freq": 3473,
+            "top_freq_pct": 49.31,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 3473,
+                "Yes": 2044,
+                "No internet service": 1526
+            }
+        },
+        "StreamingTV": {
+            "column": "StreamingTV",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.89,
+            "top_value": "No",
+            "top_freq": 2810,
+            "top_freq_pct": 39.9,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 2810,
+                "Yes": 2707,
+                "No internet service": 1526
+            }
+        },
+        "StreamingMovies": {
+            "column": "StreamingMovies",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 96.91,
+            "top_value": "No",
+            "top_freq": 2785,
+            "top_freq_pct": 39.54,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 2785,
+                "Yes": 2732,
+                "No internet service": 1526
+            }
+        },
+        "Contract": {
+            "column": "Contract",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 3,
+            "unique_pct": 0.04,
+            "memory_kb": 132.88,
+            "top_value": "Month-to-month",
+            "top_freq": 3875,
+            "top_freq_pct": 55.02,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Month-to-month": 3875,
+                "Two year": 1695,
+                "One year": 1473
+            }
+        },
+        "PaperlessBilling": {
+            "column": "PaperlessBilling",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 72.98,
+            "top_value": "Yes",
+            "top_freq": 4171,
+            "top_freq_pct": 59.22,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Yes": 4171,
+                "No": 2872
+            }
+        },
+        "PaymentMethod": {
+            "column": "PaymentMethod",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 4,
+            "unique_pct": 0.06,
+            "memory_kb": 182.88,
+            "top_value": "Electronic check",
+            "top_freq": 2365,
+            "top_freq_pct": 33.58,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "Electronic check": 2365,
+                "Mailed check": 1612,
+                "Bank transfer (automatic)": 1544,
+                "Credit card (automatic)": 1522
+            }
+        },
+        "MonthlyCharges": {
+            "column": "MonthlyCharges",
+            "dtype": "float64",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 1585,
+            "unique_pct": 22.5,
+            "memory_kb": 55.15,
+            "min": 18.25,
+            "max": 118.75,
+            "mean": 64.76,
+            "median": 70.35,
+            "std": 30.09,
+            "q1": 35.5,
+            "q3": 89.85,
+            "zeros": 0,
+            "negatives": 0,
+            "outliers_iqr": 0,
+            "outliers_iqr_pct": 0.0
+        },
+        "TotalCharges": {
+            "column": "TotalCharges",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 6531,
+            "unique_pct": 92.73,
+            "memory_kb": 95.58,
+            "top_value": "20.2",
+            "top_freq": 11,
+            "top_freq_pct": 0.16,
+            "blank_strings": 11,
+            "looks_numeric_pct": 99.84,
+            "top_values": {
+                "20.2": 11,
+                " ": 11,
+                "19.75": 9,
+                "19.9": 8,
+                "20.05": 8
+            }
+        },
+        "Churn": {
+            "column": "Churn",
+            "dtype": "str",
+            "count": 7043,
+            "missing": 0,
+            "missing_pct": 0.0,
+            "unique": 2,
+            "unique_pct": 0.03,
+            "memory_kb": 70.73,
+            "top_value": "No",
+            "top_freq": 5174,
+            "top_freq_pct": 73.46,
+            "blank_strings": 0,
+            "looks_numeric_pct": 0.0,
+            "top_values": {
+                "No": 5174,
+                "Yes": 1869
+            }
+        }
+    },
+    "correlation": {
+        "SeniorCitizen": {
+            "SeniorCitizen": 1.0,
+            "tenure": 0.017,
+            "MonthlyCharges": 0.22
+        },
+        "tenure": {
+            "SeniorCitizen": 0.017,
+            "tenure": 1.0,
+            "MonthlyCharges": 0.248
+        },
+        "MonthlyCharges": {
+            "SeniorCitizen": 0.22,
+            "tenure": 0.248,
+            "MonthlyCharges": 1.0
+        }
+    }
+}

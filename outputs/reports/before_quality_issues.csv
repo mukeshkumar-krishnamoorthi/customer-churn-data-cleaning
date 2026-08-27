@@ -1,0 +1,5 @@
+check,column,severity,message,count,pct
+schema,TotalCharges,warning,Column 'TotalCharges' expected kind 'numeric' but has dtype 'str',0,0.0
+duplicate_rows,,warning,22 duplicate row(s) found (0.31%),22,0.31
+numeric_string,TotalCharges,error,Column 'TotalCharges' should be numeric but has 11 non-numeric value(s),11,0.16
+consistency,TotalCharges,warning,'TotalCharges' deviates from 'tenure' * 'MonthlyCharges' by more than 15% in 151 row(s),151,2.15

@@ -3,7 +3,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from utils.logger import Logger
+from src.utils.logger import Logger
 
 
 def _json_default(value):

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from utils.logger import Logger
+from src.utils.logger import Logger
 
 CATEGORICAL_TOP_N = 5
 IQR_MULTIPLIER = 1.5
